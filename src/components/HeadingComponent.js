@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../assets/styles/HeadingStyles.module.scss';
 
 export const HeadingComponent = () => {
@@ -9,11 +9,19 @@ export const HeadingComponent = () => {
     "Watsapp",
     "Discord",
     "Twitter",
-    "Messenges",
+    "Messenger",
     "Group chats",
   ]
 
   const [activeSocilaMedia, setActiveSocialMedia] = useState(socialSites[0])
+
+
+  // experimental implementation of dynamic social media Text, (after assessment time over)
+ useEffect(() => {
+  setInterval(() => {
+    setActiveSocialMedia(socialSites[Math.floor(Math.random() * (8 - 0) + 0)])
+  }, 8000)
+ })
 
 
   return (
