@@ -14,8 +14,8 @@
 }
 
 .headingText {
-  width: 283px;
-  height: 108px;
+  width: 17.6875rem;
+  height: 6.75rem;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -73,5 +73,26 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+  }
+  .headingText {
+    width: 35.8125rem;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #240D57;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 850px) {
+  .detailsParagraph {
+    text-align: right;
+  }
+  .headingText {
+    text-align: right;
   }
 }

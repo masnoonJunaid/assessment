@@ -34,3 +34,10 @@
   flex-grow: 0;
   padding-left: .5rem;
 }
+
+@media screen and (min-width: 850px) {
+  .buttonStyle {
+    float: right;
+    width: 20rem;
+  }
+}

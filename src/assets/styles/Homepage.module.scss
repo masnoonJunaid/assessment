@@ -5,10 +5,36 @@
   text-align: center;
 }
 
-.buttonContainer {
+.buttonContainerMobile {
   margin-top: 1rem;
 }
 
-.eventContainer {
+.eventContainerMobile {
   padding-top: 1rem;
+}
+
+.desktopContainer {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  .headingContainerMobile {
+    display: none;
+  }
+
+  .eventContainerMobile {
+    display: none;
+  }
+
+  .buttonContainerMobile {
+    display: none;
+  }
+
+  .desktopContainer {
+    display: flex;
+  }
+  .rightCard {
+    padding-top: 10rem;
+    padding-right: 8rem;
+  }
 }
