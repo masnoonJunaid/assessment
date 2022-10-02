@@ -1,0 +1,13 @@
+.homeContainer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.buttonContainer {
+  margin-top: 1rem;
+}
+
+.eventContainer {
+  padding-top: 1rem;
+}
