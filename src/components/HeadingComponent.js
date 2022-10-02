@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../assets/styles/HeadingStyles.module.scss';
 
 export const HeadingComponent = () => {
   const socialSites =[
@@ -16,13 +17,15 @@ export const HeadingComponent = () => {
 
 
   return (
-    <head>
-      <h1 className="headingText">
+    <div>
+      <h1 className={styles.headingText}>
         Imagine if
-        <span className='activeSocialText'>{activeSocilaMedia}</span>
+        <br />
+        <span className={styles.activeSocialText}>{activeSocilaMedia}</span>
+        <br />
         had events.
       </h1>
-      <p className='detailsParagraph'>Easily host and share events with your friends across any social media.</p>
-    </head>
+      <p className={styles.detailsParagraph}>Easily host and share events with your friends across any social media.</p>
+    </div>
   )
 }
