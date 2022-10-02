@@ -20,7 +20,7 @@ export const HeadingComponent = () => {
  useEffect(() => {
   setInterval(() => {
     setActiveSocialMedia(socialSites[Math.floor(Math.random() * (8 - 0) + 0)])
-  }, 8000)
+  }, 10000)
  })
 
 
